@@ -19,7 +19,7 @@ spa.chat = (function () {
         jqueryMap = { $container : $container };
     };
 
-    configModule = function () {
+    configModule = function (input_map) {
         spa.util.setConfigMap({
             input_map : input_map,
             settable_map : configMap.settable_map,
@@ -37,7 +37,7 @@ spa.chat = (function () {
 
     return {
         configModule : configModule,
-        initModule : initModule 
+        initModule : initModule
     };
 }
 ());
